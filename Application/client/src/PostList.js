@@ -7,7 +7,7 @@ const PostList = () => {
   const [posts, setPosts] = useState({});
 
   const fetchPosts = async () => {
-    const res = await axios.get("http://query-srv.default.svc.cluster.local/posts");
+    const res = await axios.get("http://query-srv:4002/posts");
 
     setPosts(res.data);
   };
