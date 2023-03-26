@@ -7,7 +7,7 @@ const PostCreate = () => {
   const onSubmit = async (event) => {
     event.preventDefault();
     
-    await axios.post("posts-srv.default.svc.cluster.local/posts", {
+    await axios.post("posts-srv:4000/posts", {
       title,
     });
 
